@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แบบฟอร์มลงทะเบียนนักเรียน</title>
+</head>
+<body>
+    <h1>แบบฟอร์มลงทะเบียนนักเรียน</h1>
+
+    <form action="result.php" method="post">
+        <label for="fullname">ชื่อ-สกุล:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="student_id">รหัสนักเรียน:</label><br>
+        <input type="text" id="student_id" name="student_id" required><br><br>
+
+        เพศ:
+        <input type="radio" id="male" name="gender" value="ชาย" required>
+        <label for="male">ชาย</label>
+        <input type="radio" id="female" name="gender" value="หญิง">
+        <label for="female">หญิง</label><br><br>
+
+        <label for="level">ระดับชั้น:</label>
+        <select id="level" name="level">
+            <option value="ปวช.1">ปวช.1</option>
+            <option value="ปวช.2">ปวช.2</option>
+            <option value="ปวช.3">ปวช.3</option>
+            <option value="ปวส.1">ปวส.1</option>
+            <option value="ปวส.2">ปวส.2</option>
+        </select><br><br>
+
+        <label for="email">อีเมล:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">ลงทะเบียน</button>
+        <button type="reset">ล้างข้อมูล</button>
+    </form>
+</body>
+</html>
